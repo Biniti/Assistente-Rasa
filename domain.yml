@@ -1,0 +1,43 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - police_acess
+  - fireman_acess
+
+responses:
+  utter_greet:
+  - text: "Oi, tudo bem? Eu posso te indicar 2 sites dos militares, o da policia militar e o do corpo de bombeiros"
+  - text: "Olá, sou o assistente virtual, em que posso te ajudar?"
+
+  utter_cheer_up:
+  - text: "Aqui está algo que pode te animar!:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Isso ajudou você?"
+
+  utter_happy:
+  - text: "Ótimo, até mais!"
+
+  utter_goodbye:
+  - text: "Bye bye"
+
+  utter_iamabot:
+  - text: "Eu sou um robô, feito em Rasa."
+
+  utter_police_acess:
+  - text: "Aqui está o site da polícia militar: www.pm.pb.gov.br/portal/"
+  - text: "hmm.. aqui o link para você acessar o site: www.pm.pb.gov.br/portal/"
+  
+  utter_fireman_acess:
+  - text: "Esse é o link para o site do corpo de bombeiros: https://bombeiros.pb.gov.br/"
+  - text: "hmm.. aqui o link para você acessar o site: https://bombeiros.pb.gov.br/"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
