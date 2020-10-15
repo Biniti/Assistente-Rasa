@@ -8,11 +8,30 @@ intents:
   - bot_challenge
   - police_acess
   - fireman_acess
+  - marinha_acess
+  - ServicoMilitar_acess
+  - AFA_acess
+
+actions:
+  - utter_greet
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_happy
+  - utter_goodbye
+  - utter_iamabot
+  - utter_police_acess
+  - utter_fireman_acess
+  - utter_marinha_acess
+  - utter_AFA_acess
+  - utter_militar_acess
+  - utter_deny
+
 
 responses:
   utter_greet:
-  - text: "Oi, tudo bem? Eu posso te indicar 2 sites dos militares, o da policia militar e o do corpo de bombeiros"
-  - text: "Olá, sou o assistente virtual, em que posso te ajudar?"
+  - text: "Ola, estou aqui para te ajudar a encontrar os sites de sua preferencia, aqui temos o site do Serviço militar,
+           policia militar,  Força Aérea, corpo de bombeiros e o  Marinha, qual desses sites voce deseja
+          visitar hoje?"
 
   utter_cheer_up:
   - text: "Aqui está algo que pode te animar!:"
@@ -25,19 +44,30 @@ responses:
   - text: "Ótimo, até mais!"
 
   utter_goodbye:
-  - text: "Bye bye"
+  - text: "Até a próxima"
 
   utter_iamabot:
   - text: "Eu sou um robô, feito em Rasa."
 
+  utter_deny:
+    - text: "Poxa, que pena, mas tudo bem, quem sabe na próxima vez"
+
   utter_police_acess:
   - text: "Aqui está o site da polícia militar: www.pm.pb.gov.br/portal/"
   - text: "hmm.. aqui o link para você acessar o site: www.pm.pb.gov.br/portal/"
-  
-  utter_fireman_acess:
-  - text: "Esse é o link para o site do corpo de bombeiros: https://bombeiros.pb.gov.br/"
-  - text: "hmm.. aqui o link para você acessar o site: https://bombeiros.pb.gov.br/"
 
+  utter_fireman_acess:
+  - text: "Muito bem, aqui esta o  link para o site do corpo de bombeiros: https://bombeiros.pb.gov.br/"
+  #- text: "hmm.. aqui o link para você acessar o site: https://bombeiros.pb.gov.br/"
+
+  utter_marinha_acess:
+    - text: "Muito bem, aqui esta o link para o site da Marinha Brasileira: https://www.marinha.mil.br/"
+
+  utter_AFA_acess:
+    - text: "Muito bem, aqui esta o link para o site das Força Aérea Brasileira: https://www2.fab.mil.br/afa/"
+
+  utter_militar_acess:
+    - text: "Muito bem, aqui esta o link para o site do Serviço Militar Brasileiro: http://www.eb.mil.br/web/ingresso/servico-militar/-/asset_publisher/yHiw1SWkLQY6/content/servico-militar"
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
